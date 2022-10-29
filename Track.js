@@ -1,6 +1,3 @@
-var roadPic = document.createElement("img");
-var wallPic = document.createElement("img");
-
 const TRACK_W = 40;
 const TRACK_H = 40;
 const TRACK_GAP = 2;
@@ -66,9 +63,4 @@ function isWallAtColRow(col, row) {
 
 function rowColToArrayIndex(col, row) {
     return col + TRACK_COLS * row;
-}
-
-function trackLoadImages() {
-    roadPic.src = "track_road.png";
-    wallPic.src = "track_wall.png";
 }

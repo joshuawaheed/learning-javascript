@@ -10,8 +10,9 @@ function colorRect(topLeftX, topLeftY, boxWidth, boxHeight, fillColor) {
     canvasContext.fillRect(topLeftX, topLeftY, boxWidth, boxHeight);
 }
 
-function colorText(showWords, textX, textY, fillColor) {
+function colorText(showWords, textX, textY, fillColor, textAlign) {
     canvasContext.fillStyle = fillColor;
+    canvasContext.textAlign = textAlign;
     canvasContext.fillText(showWords, textX, textY);
 }
 
