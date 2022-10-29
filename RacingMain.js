@@ -6,6 +6,7 @@ window.onload = function () {
     var framesPerSecond = 30;
     setInterval(updateAll, 1000 / framesPerSecond);
     setupInput();
+    trackLoadImages();
     carImageLoad();
     carReset();
 };
@@ -16,8 +17,8 @@ function clearScreen() {
 
 function drawAll() {
     clearScreen();
-    carDraw();
     drawTracks();
+    carDraw();
 }
 
 function moveAll() {
